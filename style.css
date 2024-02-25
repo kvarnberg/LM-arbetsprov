@@ -90,12 +90,12 @@ input::placeholder {
 }
 
 /* Om knappen görs till att vara disabled (via JS) då inget är ifyllt så ska den vara gråad */
-.btn:disabled {
+/* .btn:disabled {
     background-color: grey;
-}
+} */
 
 footer {
-    position: relative;
+    position: relative; /* positioned to flow of doc*/
     z-index: 100;
     width: 100%;
     padding: 2rem;
