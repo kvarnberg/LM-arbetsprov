@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+/* Relative size units and %. Rem for consequent sizes in the whole doc. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 100%;
+    padding-bottom: 0; /* to avoid footer overlap */
+}
+
+header {
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    max-width: 100%;
+    background-color: #A8DADC;
+    text-align: center;
+    position: static;
+}
+
+.logo-header {
+    max-width: 18.75rem;
+    max-height: 18.75rem;
+    object-fit: scale-down;
+}
+
+main {
+    color: black;
+    background-color: white;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+/* Flex for onedimensional layout. Column, easy and intuitive look for a form.*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+ 
+input {
+    padding: 1rem;
+    margin: 1rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #457B9D;
+}
+
+input::placeholder {
+    color: black; 
+}
+
+.btn {
+    background-color: #1D3557;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+    margin: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-style: none;
+}
+
+.btn:hover {
+    background-color: #E63946;
+}
+
+/* Om knappen görs till att vara disabled (via JS) då inget är ifyllt så ska den vara gråad */
+.btn:disabled {
+    background-color: grey;
+}
+
+footer {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    padding: 2rem;
+    background-color: #A8DADC;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.25rem;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    object-fit: scale-down;
+}
+
+@media (max-width: 680px){
+    input {
+        width: 80%;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+} 
